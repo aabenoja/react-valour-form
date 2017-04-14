@@ -1,0 +1,36 @@
+{
+  "name": "react-valour-form",
+  "version": "0.0.1",
+  "description": "Force validation of components wrapped with wrap-component-with-valour",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "MIT",
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "./test/helpers/setup.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "jsdom": "^9.12.0",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "valour": "0.0.25",
+    "wrap-component-with-valour": "^1.2.0"
+  },
+  "dependencies": {
+    "lodash.noop": "^3.0.1"
+  }
+}
