@@ -14,6 +14,11 @@
       "./test/helpers/setup.js"
     ]
   },
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "valour": "^0.0.25",
+    "wrap-component-with-valour": "^1.2.0"
+  },
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-core": "^6.24.1",

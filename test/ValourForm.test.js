@@ -10,7 +10,7 @@ import wrapWithValour from 'wrap-component-with-valour';
 
 const WrappedInput = wrapWithValour('input');
 const rules = {
-  Email: valour.rule.isEmail().isRequired()
+  Email: valour.rule.isEmail()
 };
 
 function createForm({onStateChanged = noop, onSubmit = noop, onChange = noop} = {}) {
