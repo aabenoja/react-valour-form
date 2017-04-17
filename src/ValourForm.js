@@ -40,7 +40,7 @@ export default class ValourForm extends React.Component {
       const { value } = e.target;
       const { formValues } = this.state;
       formValues[name] = value;
-      this.state({ formValues });
+      this.setState({ formValues });
       onChange(e);
     };
   }

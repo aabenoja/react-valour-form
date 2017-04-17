@@ -31,6 +31,7 @@
     "wrap-component-with-valour": "^1.2.0"
   },
   "dependencies": {
+    "lodash.isempty": "^4.4.0",
     "lodash.noop": "^3.0.1"
   }
 }
