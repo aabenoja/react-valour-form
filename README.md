@@ -1,6 +1,8 @@
 react-valour-form
 =================
 
+[![Build Status](https://travis-ci.org/aabenoja/react-valour-form.svg?branch=master)](https://travis-ci.org/aabenoja/react-valour-form)
+
 A simple form component to wrap around your valour-enhanced inputs.
 
 ## Props
@@ -12,7 +14,8 @@ A simple form component to wrap around your valour-enhanced inputs.
   
 * `onValidatedSubmit` - **Defaults to NOOP**
 
-  The callback made after the submit event is fired and validation against all fields has been made. Two parameters are passed to this callback, `formIsValid` and `validationResults`. The first is what you get back from `valour.isValid(yourFormName)`, and the second is what is returned from `valour.getResult(yourFormName)`.
+  The callback made after the submit event is fired and validation against all fields has been made. Two parameters are passed to this callback, `formIsValid`
+  and `validationResults`. The first is what you get back from `valour.isValid(yourFormName)`, and the second is what is returned from `valour.getResult(yourFormName)`.
 
 
 ## Usage
@@ -22,10 +25,13 @@ import React from 'react';
 import valour from 'valour';
 import wrapWithValour from 'wrap-component-with-valour';
 import ValourForm from 'react-valour-form';
+import CustomInput from './path/to/CustomInput';
 
 const rules = {
   Email: valour.rule.isEmail()
 };
+
+const WrappedInput = wrapWithValour(CustomInput);
 
 export default class ForgotPassword extends React.Component {
   constructor(props) {
@@ -59,6 +65,7 @@ export default class ForgotPassword extends React.Component {
           rules={rules}
           onValidationStateChanged={this.onStateChanged}
           onChange={this.onChange}
+          {...otherInputProps}
         />
       </ValourForm>
     );
