@@ -2,7 +2,7 @@
   "name": "react-valour-form",
   "version": "0.1.0",
   "description": "Force validation of components wrapped with wrap-component-with-valour",
-  "main": "lib/index.js",
+  "main": "lib/ValourForm.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",
