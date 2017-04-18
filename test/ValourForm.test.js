@@ -41,8 +41,9 @@ test('ValourForm tracks the values of fields on change', t => {
 });
 
 test('ValourForm forces validation of valour-wrapped fields on submission', t => {
-  let validationStateChangedWasCalled = false;
+  let validationStateChangedWasCalled;
   const form = createForm({ onStateChanged: () => validationStateChangedWasCalled = true });
+  validationStateChangedWasCalled = false;
   form.find('form').simulate('submit');
   t.true(validationStateChangedWasCalled);
 });

@@ -17,7 +17,7 @@
   "peerDependencies": {
     "react": ">=0.14.0",
     "valour": "^0.0.25",
-    "wrap-component-with-valour": "^1.2.0"
+    "wrap-component-with-valour": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",
@@ -34,7 +34,7 @@
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
     "valour": "0.0.25",
-    "wrap-component-with-valour": "^1.2.0"
+    "wrap-component-with-valour": "^2.0.0"
   },
   "dependencies": {
     "lodash.noop": "^3.0.1"
